@@ -13,6 +13,10 @@
     <meta name="keywords" content="página web, proyecto, HTML, etiquetas semánticas" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
 </head>
 
 <body>
@@ -165,30 +169,39 @@
                     
                     <br>
                     <br>
+                    <fieldset>
+                        <legend>Deseo que me contacten inicialmente por:</legend>
 
-                    <legend>Deseo que me contacten inicialmente por:</legend>
+                        <br>
 
-                    <br>
+                        <label for="llamada">Llamada</label>
+                        <input type="radio" name="opcion-contacto" id="llamada">
 
-                    <label for="llamada">Llamada</label>
-                    <input type="radio" name="opcion-contacto" id="llamada">
+                        <label for="cualquiera">WhatsApp</label>
+                        <input type="radio" name="opcion-contacto" id="WhatsApp">
 
-                    <label for="cualquiera">WhatsApp</label>
-                    <input type="radio" name="opcion-contacto" id="WhatsApp">
-
-                    <label for="email">Correo electrónico</label>
-                    <input type="radio" name="opcion-contacto" id="email">
-
-                    <br>
+                        <label for="email">Correo electrónico</label>
+                        <input type="radio" name="opcion-contacto" id="email">
+                    </fieldset>
+                    
                     <br>
                   
                     <label for="comentarios">Comentarios:</label>
                     <textarea 
                     id="comentarios" 
                     rows="5" 
-                    placeholder="Escribe aquí tus comentarios..."
-                    required>
+                    placeholder="Escribe aquí tus comentarios..." required>
                     </textarea>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <button 
+                    type="submit">
+                    Enviar&nbsp;
+                    <span class="material-icons">send</span>
+                    </button>
     
             </fieldset>
             </form>
