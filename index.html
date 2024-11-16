@@ -48,12 +48,11 @@
 
 <body>
     <header>
-
         <figure>
             <img src="./img/FOTOWEB_CEN-02-1-e1655833400800~2.png" alt="CENHammy" title="CENHammy" width="250">
         </figure>
 
-        <nav>
+        <nav aria-label="Enlaces de redes sociales y contacto de CENHammy">
             <a href="https://www.facebook.com/CenHammy.Neurorehabilitacion?locale=es_ES" target="_blank">
                 <i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/cenhammy/" target="_blank">
@@ -65,7 +64,7 @@
             <a href="https://wa.me/:522292373924" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i></a>
 
-            <nav>
+            <nav aria-label="Botones de navegación del sitio">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
@@ -74,13 +73,11 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-
     </header>
 
     <main>
-
-        <section id="inicio">
-            <h2>De donde provengo...</h2>
+        <section aria-labelledby="inicio">
+            <h2 id="inicio">De donde provengo...</h2>
             <figure>
                 <img src="https://cenhammy.com/wp-content/uploads/2022/06/FOTOWEB_CEN-01.png" alt="Foto Hammy"
                     title="Hammy" width="250">
@@ -95,8 +92,8 @@
             </p>
         </section>
 
-        <section id="nosotros">
-            <h2>Quienes somos</h2>
+        <section aria-labelledby="nosotros">
+            <h2 id="nosotros">Quienes somos</h2>
             <p>
                 Somos un centro de neurorehabilitación y medicina hiperbárica que nace
                 con el propósito de ayudar a la gente en el camino para llegar a una
@@ -107,8 +104,8 @@
             </p>
         </section>
 
-        <section id="equipo">
-            <h2>Nuestro equipo</h2>
+        <section aria-labelledby="equipo">
+            <h2 id="equipo">Nuestro equipo</h2>
             <ul>
                 <figure>
                     <img src="https://cenhammy.com/wp-content/uploads/2022/06/DSC_0012-1.jpg"
@@ -156,8 +153,8 @@
             </ul>
         </section>
 
-        <section id="servicios">
-            <h2>Nuestros servicios</h2>
+        <section aria-labelledby="servicios">
+            <h2 id="servicios">Nuestros servicios</h2>
             <ul>
                 <li>Neurocirugía y neurocirugía pediátrica</li>
                 <li>Neurología pediátrica</li>
@@ -169,34 +166,36 @@
             </ul>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section aria-labelledby="contacto">
+            <h2 id="contacto">Contacto</h2>
             <fieldset>
                 <h3>Horario</h3>
                 <p>Lunes a viernes ----- 8 a 20 hrs</p>
                 <p>Sábados -------------- 8 a 14 hrs</p>
             </fieldset>
 
-            <h3>Dirección</h3>
+            <!-- Decido volver 'article' a los elementos de la dirección ya que podrían ser replicados 
+            independientemente en otras partes del sitio web -->
+            <article aria-label="Dirección">
+                <header>
+                    <h3>Dirección</h3>
+                </header>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
+                            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c346c5f7c2e7c3%3A0xe2424e287f551b1b!2sCenhammy!5e0!3m2!
+                            1ses!2smx!4v1731794195482!5m2!1ses!2smx" width="400" height="300" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p>
+                    <a href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                            &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza.
+                            91910. Veracruz, Ver, México.</a>
+                </p>
+            </article>
 
-            <div class="google-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2485441158724!2d-96.1290777!3d19.184343700000003!
-                        2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c346c5f7c2e7c3%3A0xe2424e287f551b1b!2sCenhammy!5e0!3m2!
-                        1ses!2smx!4v1731794195482!5m2!1ses!2smx"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <p>
-                <a href="https://maps.app.goo.gl/4v2XpMp78sE8vos78" target="_blank"><i
-                        class="fa-solid fa-map-location-dot"></i>
-                    &nbsp;Juan Enríquez 780, entre Víctimas del 5 y 6 de julio y Flores Magón,Fracc. Zaragoza. 
-                    91910. Veracruz, Ver, México.</a>
-            </p>
-
-
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>
                         <h3>Agenda una cita</h3>
@@ -261,7 +260,6 @@
                         Enviar&nbsp;
                         <span class="material-icons">send</span>
                     </button>
-
                 </fieldset>
             </form>
 
@@ -269,9 +267,13 @@
 
     </main>
 
-    <footer>
-        <h3>Contáctanos</h3>
-        <nav>
+    <!-- Decido poner como 'aside' la segunda zona de enlaces para contacto y dejar como 'footer' la información 
+     de copyright y enlaces de contacto del autor. Esto funciona porque el fin es mostrar el proyecto y no es 
+     para uso de la empresa. Si ya fuera para su uso, entonces probablemente debería ir todo en el footer 
+     y sin enlaces de la info del autor -->
+    <aside aria-labelledby="enlaces-contacto">
+        <h3 id="enlaces-contacto">Contáctanos</h3>
+
             <p><a href="mailto:contacto@cenhammy.com" target="_blank"><i class="fa-solid fa-envelope"></i>
                     &nbsp;contacto@cenhammy.com</a></p>
             <p><a href="tel:522292373924" target="_blank"><i class="fa-solid fa-phone"></i>
@@ -282,14 +284,21 @@
                     &nbsp;CenHammy Centro de neurorehabilitación y medicina hiperbárica</a></p>
             <p><a href="https://www.instagram.com/cenhammy/" target="_blank"><i class="fa-brands fa-instagram"></i>
                     &nbsp;CENHammy</a></p>
-        </nav>
+    </aside>
 
         <br>
 
+    <footer>
         <p>
-            &#169 2024
-            <span><a href="https://github.com/ImaFuentes10" target="_blank">Imanol Fuentes.</a></span>
-            Todos los derechos reservados.
+            &#169 2024 Imanol Fuentes. Todos los derechos reservados.
+            <a href="https://www.linkedin.com/in/imanolfuentes/">
+                <i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://github.com/ImaFuentes10" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+            
+            <a href="mailto:ima.fuentes.c@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i></a>
         </p>
     </footer>
 </body>
