@@ -6,6 +6,9 @@ Se realizó el diseño de una página web para un centro de neurorehabilitación
 El objetivo es mostrar la estructura básica de un HTML, las etiquetas semánticas y atributos de accesibilidad.
 Además, se muestran diversos ejemplos de elementos que se pueden añadir a un HTML, como: imágenes, mapas, íconos, formularios, etc.
 
+* Se puede acceder a la página en el siguiente enlace de Github Pages:
+  https://imafuentes10.github.io/Proyecto-Modulo1-FrontEndAI/
+
 ### 📜 Estrcutura del proyecto
 
 - 'index.html' : Archivo HTML que contiene la página web.
@@ -28,6 +31,9 @@ The design of a website for a neurorehabilitation and hyperbaric medicine center
 The goal is to show the basic HTML structure, semantic tags and accessibility attributes.
 Also, this shows differente examples of elements that can be added to an HTML website, such as: images, maps, icons, forms, etc.
 
+* Website can be accessed through the following Github Pages link:
+  https://imafuentes10.github.io/Proyecto-Modulo1-FrontEndAI/
+  
 ### 📜 Project Structrure
 
 - 'index.html' : HTML file which contains the website.
